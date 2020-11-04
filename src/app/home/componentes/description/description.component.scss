@@ -1,0 +1,21 @@
+.service{
+  margin-top: 120px;
+  background-color: hsl(218, 28%, 13%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+.types-service{
+  color: white;
+  text-align: center;
+}
+
+.types-service p{
+  font-size: 12px;
+}
+
+.types-service h1{
+  font-size: 15px;
+}

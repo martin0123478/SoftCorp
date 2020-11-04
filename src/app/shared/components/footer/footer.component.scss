@@ -1,0 +1,52 @@
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  background-color:hsl(216, 53%, 9%);
+  height:400px;
+  justify-items: center;
+  align-items: center;
+
+}
+.img-footer{
+  width: 95px;
+  margin-left: 25px;
+}
+
+.footer-contact{
+  display: inline-block;
+  margin-left: 25px;
+  
+}
+
+.contact{
+  grid-column: 1;
+  
+}
+
+.logo-container{
+  height: 70px;
+  
+}
+
+.footer-icons a{
+  margin-left: 5px;
+  text-decoration: none;
+  height: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.footer-contact p{
+  color: white;
+  
+}
+
+.footer-about p{
+  color: white;
+  line-height:30px;
+}
+
+.footer-Carrer p{
+  color: white;
+  line-height:30px;
+}

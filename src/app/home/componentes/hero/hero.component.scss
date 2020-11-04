@@ -1,0 +1,30 @@
+.hero{
+  background-color:hsl(218, 28%, 13%) ;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+
+
+.hero-image-container{
+  
+  width: 500px;
+}
+
+.img-hero{
+  width: 450px; 
+  border-radius: 10px;
+}
+
+.text{
+  text-align: center;
+  color: white;
+}
+
+.hero-description{
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,25 @@
+.productive{
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.productive-image-container{
+  width: 500px;
+}
+
+img{
+  width: 480px;
+  border-radius: 10px;
+}
+
+.productive .description h1{
+  color: white;
+  font-size: 40px;
+}
+
+.productive .description p{
+  color: white;
+  font-size: 18px;
+}

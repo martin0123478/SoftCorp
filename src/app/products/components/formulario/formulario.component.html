@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="saveProduct($event)">
+  
+    <input placeholder="Nombre" formControlName="nombre"  type="text" >
+ 
+   
+  
+
+  
+    <input placeholder="Apellido Paterno" formControlName="Apellido_p"  type="text" >
+  
+
+ 
+    <input placeholder="Apellido Materno" formControlName="Apellido_m"  type="text" >
+  
+
+  
+    <input placeholder="email" formControlName="email" type="text" >
+  
+
+  
+    <input placeholder="Empresa" formControlName="empresa"  type="text" >
+  
+
+  
+    <input  placeholder="Trabajo" formControlName="trabajo"  type="text" >
+  
+
+  
+    <input placeholder="Ciudad" formControlName="cuidad" type="text" >
+  
+  <button type="submit">Enviar</button>
+</form>

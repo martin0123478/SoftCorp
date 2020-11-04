@@ -1,0 +1,19 @@
+<div class="menu-container">
+  <div *ngFor ="let men of head" class="img-header-container">
+    <img [src]="men" alt="logo marca">
+  </div>
+  <div class="menu">
+    <nav>
+      <ol>
+        <li>
+          <a routerLink="/home">Home</a>
+        </li>
+        <li>
+          <a routerLink="/products">Productos</a>
+        </li>
+        
+      </ol>
+    </nav>
+
+  </div>
+</div>
