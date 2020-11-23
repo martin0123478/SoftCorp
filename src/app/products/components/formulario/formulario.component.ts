@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {ClientesService} from './../../../core/services/clientes/clientes.service'
+// import {MaterialModule} from './../../../material/material.module'
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
@@ -9,20 +10,22 @@ import {ClientesService} from './../../../core/services/clientes/clientes.servic
 export class FormularioComponent implements OnInit {
 
   form: FormGroup;
-  constructor(private formBuilder: FormBuilder,
-    private clientesService : ClientesService ) { 
+  constructor(
+    private formBuilder: FormBuilder,
+    private clientesService : ClientesService )
+     { 
     this.buildForm();
   }
 
   ngOnInit(): void {
   }
 
-  saveProduct (event: Event){
+  saveClient(event: Event){
     event.preventDefault()
     console.log(this.form.value);
   }
 
-  // saveProduct (event: Event){
+  // saveClient (event: Event){
   //   event.preventDefault()
   //   if(this.form.valid){
   //     const cliente = this.form.value;
@@ -41,10 +44,10 @@ export class FormularioComponent implements OnInit {
       nombre:['', [Validators.required]],
       apellido_p: ['', [Validators.required]],
       apellido_m: ['', [Validators.required]],
-      email: ['',[Validators.required]],
+      email: ['',[ Validators.email]],
       empresa: ['', [Validators.required]],
       trabajo: ['',[Validators.required]],
-      cuidad: ['', [Validators.required]]
+      ciudad: ['', [Validators.required]]
       
     })
   }

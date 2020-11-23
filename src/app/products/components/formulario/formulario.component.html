@@ -1,32 +1,43 @@
-<form [formGroup]="form" (ngSubmit)="saveProduct($event)">
+<form [formGroup]="form" (ngSubmit)="saveClient ($event)">
   
-    <input placeholder="Nombre" formControlName="nombre"  type="text" >
+  <mat-form-field>
+    <input matInput  placeholder="Nombre" formControlName="nombre"  type="text" >
+  </mat-form-field>
+    
  
-   
+  <mat-form-field>
+    <input matInput placeholder="Apellido Paterno" formControlName="apellido_p"  type="text" >
+  </mat-form-field>
+    
   
 
-  
-    <input placeholder="Apellido Paterno" formControlName="Apellido_p"  type="text" >
-  
-
- 
-    <input placeholder="Apellido Materno" formControlName="Apellido_m"  type="text" >
+  <mat-form-field>
+    <input matInput placeholder="Apellido Materno" formControlName="apellido_m"  type="text" >
+  </mat-form-field>
+    
   
 
-  
-    <input placeholder="email" formControlName="email" type="text" >
+  <mat-form-field>
+    <input matInput placeholder="email" formControlName="email" type="text" >
+  </mat-form-field>
+    
+
+  <mat-form-field>
+    <input matInput placeholder="Empresa" formControlName="empresa"  type="text" >
+  </mat-form-field>
+    
   
 
-  
-    <input placeholder="Empresa" formControlName="empresa"  type="text" >
-  
-
-  
-    <input  placeholder="Trabajo" formControlName="trabajo"  type="text" >
+  <mat-form-field>
+    <input matInput placeholder="Trabajo" formControlName="trabajo"  type="text" >
+  </mat-form-field>
+    
   
 
+    <mat-form-field>
+      <input matInput placeholder="Ciudad" formControlName="ciudad" type="text" >
   
-    <input placeholder="Ciudad" formControlName="cuidad" type="text" >
-  
-  <button type="submit">Enviar</button>
+    </mat-form-field>
+    
+  <button [disabled]="form.invalid" mat-raised-button  type="submit">Enviar</button>
 </form>
