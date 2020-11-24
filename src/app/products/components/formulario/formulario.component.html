@@ -1,43 +1,53 @@
-<form [formGroup]="form" (ngSubmit)="saveClient ($event)">
+<div class="title-container">
+  <h1>¿Trabajamos juntos?</h1>
+</div>
+
+  <div class="form-container">
+    <form class="formulario" [formGroup]="form" (ngSubmit)="saveClient ($event)">
   
-  <mat-form-field>
-    <input matInput  placeholder="Nombre" formControlName="nombre"  type="text" >
-  </mat-form-field>
+      <mat-form-field>
+        <input matInput  placeholder="Nombre" formControlName="nombre"  type="text" >
+      </mat-form-field>
+        
+     
+      <mat-form-field>
+        <input matInput placeholder="Apellido Paterno" formControlName="apellido_p"  type="text" >
+      </mat-form-field>
+        
+      
     
- 
-  <mat-form-field>
-    <input matInput placeholder="Apellido Paterno" formControlName="apellido_p"  type="text" >
-  </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Apellido Materno" formControlName="apellido_m"  type="text" >
+      </mat-form-field>
+        
+      
     
+      <mat-form-field>
+        <input matInput placeholder="email" formControlName="email" type="text" >
+      </mat-form-field>
+        
+    
+      <mat-form-field>
+        <input matInput placeholder="Empresa" formControlName="empresa"  type="text" >
+      </mat-form-field>
+        
+      
+    
+      <mat-form-field>
+        <input matInput placeholder="Titulo" formControlName="titulo"  type="text" >
+      </mat-form-field>
+        
+      
+    
+        <mat-form-field>
+          <input matInput placeholder="Ciudad" formControlName="ciudad" type="text" >
+        </mat-form-field>
+        
+      <button [disabled]="form.invalid" mat-raised-button color="primary"  type="submit">Enviar</button>
+    </form>
+  
+  
   
 
-  <mat-form-field>
-    <input matInput placeholder="Apellido Materno" formControlName="apellido_m"  type="text" >
-  </mat-form-field>
-    
+  </div>
   
-
-  <mat-form-field>
-    <input matInput placeholder="email" formControlName="email" type="text" >
-  </mat-form-field>
-    
-
-  <mat-form-field>
-    <input matInput placeholder="Empresa" formControlName="empresa"  type="text" >
-  </mat-form-field>
-    
-  
-
-  <mat-form-field>
-    <input matInput placeholder="Trabajo" formControlName="trabajo"  type="text" >
-  </mat-form-field>
-    
-  
-
-    <mat-form-field>
-      <input matInput placeholder="Ciudad" formControlName="ciudad" type="text" >
-  
-    </mat-form-field>
-    
-  <button [disabled]="form.invalid" mat-raised-button  type="submit">Enviar</button>
-</form>

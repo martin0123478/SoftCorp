@@ -20,22 +20,22 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  saveClient(event: Event){
-    event.preventDefault()
-    console.log(this.form.value);
-  }
-
-  // saveClient (event: Event){
+  // saveClient(event: Event){
   //   event.preventDefault()
-  //   if(this.form.valid){
-  //     const cliente = this.form.value;
-  //     this.clientesService.createCliente(cliente)
-  //     .subscribe((newCliente) =>{
-  //       console.log(newCliente);
-  //     })
-  //   }
   //   console.log(this.form.value);
   // }
+
+  saveClient (event: Event){
+    event.preventDefault()
+    if(this.form.valid){
+      const cliente = this.form.value;
+      this.clientesService.createCliente(cliente)
+      .subscribe((newCliente) =>{
+        console.log(newCliente);
+      })
+    }
+    console.log(this.form.value);
+  }
   
 
 
@@ -46,7 +46,7 @@ export class FormularioComponent implements OnInit {
       apellido_m: ['', [Validators.required]],
       email: ['',[ Validators.email]],
       empresa: ['', [Validators.required]],
-      trabajo: ['',[Validators.required]],
+      titulo: ['',[Validators.required]],
       ciudad: ['', [Validators.required]]
       
     })

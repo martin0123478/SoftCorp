@@ -1,11 +1,35 @@
-form {
-  margin-top: 35px;
-  display: flex;
-  flex-direction: column;
+.title-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items:center ;
   align-items: center;
-  // color: white;
+  margin-top: 50px;
+}
+h1{
+  justify-content: center;
+  color: white;
+}
+
+
+
+.form-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  max-width: 45%;
+  justify-content: center;
+  align-content: center;
+  margin-left: 350px;
+  align-items: center;
+  margin-bottom: 60px;
+  border-radius: 20px;
+}
+
+.formulario{
+  margin-left: 125px;
+  
 }
 
 form > * {
-  width: 50%;
+  width: 80%;
 }
